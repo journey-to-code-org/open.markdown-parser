@@ -1,0 +1,29 @@
+{
+  "name": "@journey-to-code/open-markdown-parser",
+  "version": "1.0.0",
+  "description": "A small Markdown parsing adapter that normalizes markdown-it output into a stable document structure.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test",
+    "check": "npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
+  },
+  "keywords": ["markdown", "parser", "markdown-it", "document", "tokens", "open-web"],
+  "license": "MIT",
+  "sideEffects": false
+}
